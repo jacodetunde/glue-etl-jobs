@@ -11,7 +11,7 @@ resource "aws_instance" "prod" {
     Name = "s3instance"
   }
 
-  user_data = file("setup.sh")
+  user_data = file("instance.sh")
 
 }
 
